@@ -21,7 +21,7 @@ You should see something like this when executed:
         100 iterations taking   7805 msec
     true.
 
-Scala + JaCop
+Scala + JaCoP
 ---
 
 Install [Scala](http://www.scala-lang.org/). The following steps will run the benchmark.
@@ -33,12 +33,13 @@ Install [Scala](http://www.scala-lang.org/). The following steps will run the be
 You should see something like this when executed:
 
     > run
-    [info]  0% Scenario{vm=java, trial=0, benchmark=Sudoku, length=100} 23537712.12 ns; ?=5745103.79 ns @ 10 trials
+    [info]  0% Scenario{vm=java, trial=0, benchmark=Sudoku, length=100} 97656735.29 ns; ?=42751912.25 ns @ 10 trials
     [info] 
     [info]   ms
-    [info] 23.5
+    [info] 97.7
     [info] 
     [info] vm: java
     [info] trial: 0
     [info] benchmark: Sudoku
     [info] length: 100
+    [success] Total time: 24 s, completed Aug 6, 2012 3:10:35 AM
