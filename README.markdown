@@ -13,7 +13,7 @@ Install [SWI-Prolog](http://www.swi-prolog.org/) (or your Prolog implementation 
     $ cd constraint-programming-benchmarks/prolog/
     $ swipl
     ?- ['sudoku.pl'].
-    ?- bench(100).
+    ?- bench(1).
 
 You should see something like this when executed:
 
@@ -43,3 +43,19 @@ You should see something like this when executed:
     [info] benchmark: Sudoku
     [info] length: 100
     [success] Total time: 24 s, completed Aug 6, 2012 3:10:35 AM
+
+Many thanks to the [scala benchmarking template](https://github.com/sirthias/scala-benchmarking-template) and [caliper](http://code.google.com/p/caliper/).
+
+Issues
+===
+
+You'll notice I'm only doing one iteration of the benchmark when calling `bench`
+and in `Benchmark.scala`. I was testing with 100 iterations, but I noticed that
+the time for the Scala benchmark wouldn't increase when I changed it from 1 to
+even 1000 iterations. There must be some kind of optimization the JVM is doing
+that either caliper or the scala benchmarking template isn't accounting for, but
+solving that is farther than I want to go right now.
+
+I compromised by running the Scala benchmark multiple times (each time it takes
+the average of 10 runs) and averaging those averages. They all fell within a
+relatively narrow band, so hopefully it is accurate enough.

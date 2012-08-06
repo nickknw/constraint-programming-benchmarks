@@ -7,7 +7,7 @@ import scalaJaCoP._
 
 class Benchmark extends SimpleScalaBenchmark {
   
-  @Param(Array("100"))
+  @Param(Array("1"))
   val length: Int = 0
   
   val n: Int = 9
