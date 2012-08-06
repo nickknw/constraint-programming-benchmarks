@@ -1,4 +1,4 @@
-These benchmarks were written for the post [Day 3 of Prolog](). Contributions using other libraries or languages are welcome.
+These benchmarks were written for the post [Day 3 of Prolog](http://nickknowlson.com/blog/2012/08/06/seven-languages-week-3-day-3/). Contributions using other libraries or languages are welcome.
 
 Instructions
 ===
