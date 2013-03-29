@@ -13,15 +13,15 @@ class Benchmark extends SimpleScalaBenchmark {
   val n: Int = 9
   val reg: Int = 3
       
-  val problem = List(List(0, 0, 0, 0, 0, 0, 0, 0, 0), 
-                     List(0, 0, 0, 0, 0, 3, 0, 8, 5), 
-                     List(0, 0, 1, 0, 2, 0, 0, 0, 0), 
-                     List(0, 0, 0, 5, 0, 7, 0, 0, 0), 
-                     List(0, 0, 4, 0, 0, 0, 1, 0, 0), 
-                     List(0, 9, 0, 0, 0, 0, 0, 0, 0), 
-                     List(5, 0, 0, 0, 0, 0, 0, 7, 3), 
-                     List(0, 0, 2, 0, 1, 0, 0, 0, 0), 
-                     List(0, 0, 0, 0, 4, 0, 0, 0, 9))
+  val problem = Array(Array(0, 0, 0, 0, 0, 0, 0, 0, 0), 
+                     Array(0, 0, 0, 0, 0, 3, 0, 8, 5), 
+                     Array(0, 0, 1, 0, 2, 0, 0, 0, 0), 
+                     Array(0, 0, 0, 5, 0, 7, 0, 0, 0), 
+                     Array(0, 0, 4, 0, 0, 0, 1, 0, 0), 
+                     Array(0, 9, 0, 0, 0, 0, 0, 0, 0), 
+                     Array(5, 0, 0, 0, 0, 0, 0, 7, 3), 
+                     Array(0, 0, 2, 0, 1, 0, 0, 0, 0), 
+                     Array(0, 0, 0, 0, 4, 0, 0, 0, 9))
 
   def timeSudoku(reps: Int) = repeat(reps) {
                      
